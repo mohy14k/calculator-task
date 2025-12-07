@@ -31,7 +31,14 @@ function handle_button_click(button, currentValue) {
             if (currentValue === "") return "";
 
             try {
-                return eval(currentValue); 
+                const result = eval(currentValue);
+                
+                if (result !== undefined)
+                    
+                    return parseFloat(result.toFixed(2));
+
+
+                return "Error"; 
             } catch {
                 return "Error";
             }
