@@ -35,7 +35,7 @@ function handle_button_click(button, currentValue) {
                 
                 if (result !== undefined)
                     
-                    return parseFloat(result.toFixed(2));
+                    return parseFloat(result.toFixed(4));
 
 
                 return "Error"; 
